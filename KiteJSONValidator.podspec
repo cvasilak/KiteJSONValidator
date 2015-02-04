@@ -20,9 +20,7 @@ Pod::Spec.new do |s|
   s.platform     = :ios, '7.0'
   s.requires_arc = true
   s.source_files = "Sources/*.{h,m}"
-  s.xcconfig     = {
-    'ONLY_ACTIVE_ARCH' => 'NO'
-  }
+
   s.subspec "KiteJSONResources" do |sp|
     sp.resource_bundles = { 'KiteJSONValidator' => ['Resources/ReferenceSchemae/*'] }
   end

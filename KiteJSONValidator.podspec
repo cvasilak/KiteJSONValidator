@@ -15,16 +15,10 @@ Pod::Spec.new do |s|
   s.homepage     = "https://github.com/samskiter/KiteJSONValidator"
   s.license      = "MIT"
   s.authors       = { "Sam Duke" => "samskiter@users.noreply.github.com" }
-  s.version      = "0.2.2"
-  s.source       = { :git => "https://github.com/samskiter/KiteJSONValidator.git", :tag => "v#{s.version}"}
+  s.version      = "0.2.2-patched"
+  s.source       = { :git => "https://github.com/cvasilak/KiteJSONValidator.git", :branch => "develop"}
   s.platform     = :ios, '7.0'
   s.requires_arc = true
   s.source_files = "Sources/*.{h,m}"
-  s.xcconfig     = {
-    'ONLY_ACTIVE_ARCH' => 'NO'
-  }
-  s.subspec "KiteJSONResources" do |sp|
-    sp.resource_bundles = { 'KiteJSONValidator' => ['Resources/ReferenceSchemae/*'] }
-  end
-  
+
 end
